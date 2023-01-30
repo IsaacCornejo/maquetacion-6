@@ -105,7 +105,7 @@ body {
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-  height: 750px;
+  height: 870px;
 }
 
 .first-form, .second-form, .third-form {
@@ -138,14 +138,33 @@ body {
 .button {
   color: white;
   margin-top: 5px;
-  padding: 3px;
+  padding: 7px;
   background-color: rgba(0, 128, 0, 0.737);
   border: 1px solid green;
   border-radius: 2px;
 }
 
+.second-form > h3 {
+  width: 90%;
+  text-align: center;
+  color: blue;
+  background-color: gainsboro;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.third-form > h3 {
+  width: 90%;
+  text-align: center;
+  color: red;
+  background-color: gainsboro;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
 .enlaces {
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 .enlaces > a {
@@ -153,7 +172,7 @@ body {
 }
 
 .interest-links ul > li {
-  margin-left: 15px;
+  margin-left: 25px;
  list-style: disc;
 
 }
@@ -207,12 +226,8 @@ body {
 }
 
 
-
-
-
-
-
 /* DISEÑO RESPONSIVE */
+
 
 
 @media (max-width: 1426px) {
@@ -267,7 +282,7 @@ body {
   }
   
   .aside {
-    width: 50%;
+    width: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
