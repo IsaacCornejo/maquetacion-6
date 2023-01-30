@@ -1,0 +1,278 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+::before, ::after {
+  box-sizing: border-box ;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(img/paven.png);
+}
+
+/* ESTILOS DEL HEADER */
+
+.header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo > img {
+  height: 100px;
+}
+
+/* ESTILOS DEL MENU DE NAVEGACION */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  /* padding: 10px; */
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-list > a {
+  color: white;
+  border-left: 1px solid white;
+}
+
+.nav-list > a:nth-last-child(1){
+  border-right: 1px solid white;
+
+}
+
+.nav-list > a > li {
+  margin: 10px;
+}
+
+
+/* ESTILOS DEL MAIN */
+
+.main-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blog {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ESTILOS DEL ASIDE */
+
+.aside {
+  margin-top: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  height: 750px;
+}
+
+.first-form, .second-form, .third-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.second-form, .third-form, .interest-links {
+  border-top: 2px dotted gray;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.first-form > h3 {
+  width: 90%;
+  text-align: center;
+  background-color: gainsboro;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+
+.first-form > p {
+  margin-top: 5px;
+}
+
+.button {
+  color: white;
+  margin-top: 5px;
+  padding: 3px;
+  background-color: rgba(0, 128, 0, 0.737);
+  border: 1px solid green;
+  border-radius: 2px;
+}
+
+.enlaces {
+  margin-top: 10px;
+}
+
+.enlaces > a {
+  color: green;
+}
+
+.interest-links ul > li {
+  margin-left: 15px;
+ list-style: disc;
+
+}
+
+.interest-links ul > li > a {
+  color: green;
+}
+
+/* ESTILOS DEL CONTENEDOR DE NOTICIAS */
+
+.contenedor-noticias {
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* ESTILOS DE CADA ENTRADAS */
+
+.entradas > h2{
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.contenido-entrada {
+  padding: 20px;
+}
+
+.contenido-entrada > a {
+  color: green;
+}
+
+
+.contenido-entrada p.infoautor {
+  color: gray;
+  font-size: 13px;
+}
+
+/* ESTILOS DEL FOOTER */
+
+.footer {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer > p > a {
+  color: white;
+}
+
+
+
+
+
+
+
+/* DISEÑO RESPONSIVE */
+
+
+@media (max-width: 1426px) {
+  
+  .logo > img {
+    height: 80px;
+  }
+
+  .nav {
+    height: 200px;
+  }
+
+  .nav-list{
+    padding-top: 190px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .nav-list > a {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-noticias {
+    width: 95%;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+
+  .main-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blog {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .aside {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
