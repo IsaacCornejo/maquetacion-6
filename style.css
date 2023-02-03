@@ -291,3 +291,15 @@ body {
   }
   
 }
+
+@media (min-width: 500px) and (max-width: 750px){
+  .aside {
+    width: 40%;
+  }
+ }
+
+ @media (min-width: 750px) and (max-width: 1426px){
+  .aside {
+    width: 30%;
+  }
+ }
